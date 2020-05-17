@@ -91,7 +91,7 @@ employeeData[0][2] = "Last Name"
 print (employeeData)
 
 #  Open the output file
-with open(output_file, "w") as datafile:
+with open(output_file, "w", newline='') as datafile:
     writer = csv.writer(datafile)
 
     writer.writerows(employeeData)
