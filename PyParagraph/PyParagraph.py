@@ -24,8 +24,13 @@ numSentences = len(sentences)
 for char in reader:
     letters.append(char)
 
-numLetter = len(letters)
+avgLetter = round(len(letters) / numWords, 1)
 
-print(numWords)
-print(numSentences)
-print(numLetter)
+avgWordsinSentence = round(numWords / numSentences , 1)
+
+print("Paragraph analysis")
+print("----------------------------------------")
+print(f"Approximate Word Count: {numWords}")
+print(f"Approximate Sentence Count: {numSentences}")
+print(f"Average Letter Count: {avgLetter}")
+print(f"Average Sentence length: {avgWordsinSentence}")
